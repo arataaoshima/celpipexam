@@ -13,7 +13,6 @@ if Rails.env.production?
             :region => ENV['AWS_REGION']
         
         }
-        
         config.fog_directory = ENV['S3_BUCKET']
     
     end
