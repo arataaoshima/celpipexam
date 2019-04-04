@@ -16,7 +16,7 @@
       <tr>
         <td><%= photo.english %></td>
         <td><%= link_to 'Show', photo %></td>
-        <td><%= image_tag photo.image.url %></td>
+        <td class="photo"><%= image_tag photo.image.url, class:"photo" %></td>
         <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
         <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
