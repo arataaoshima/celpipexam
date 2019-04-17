@@ -3,7 +3,10 @@
 <p>
   <strong>English:</strong>
   <%= @photo.english %>
+  <%= image_tag @photo.image.url, class:"photo" %>
 </p>
+<%= link_to "Next", "/photos/#{@photo.id+1}" %> |
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
+
 <%= link_to 'Back', photos_path %>
